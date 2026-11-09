@@ -5,7 +5,7 @@
 \usepackage{lmodern}
 \usepackage{amsmath}
 
-\usepackage{hyperref}
+\usepackage[colorlinks=true, allcolors=cyan]{hyperref}
 
 \usepackage{amsthm}
 {\theoremstyle{plain}
@@ -42,6 +42,7 @@
 % Glavo dokumenta popravite tako, da se ne bo izpisal datum.
 % To naredite tako, da za ukazom `\title` dodate ukaz `\date{}`.
 \date{}
+\author{}
 
 \begin{document}
 
@@ -100,7 +101,7 @@ Primer magičnega kvadrata reda 3 je prikazan v tabeli~\ref{table:mag3}. % sklic
 \begin{definicija}
    Magični kvadrat reda \(n\) je \emph{normalen}, če v njem nastopajo števila
    \begin{equation}
-      \label{numbers}
+      \label{eq:numbers}
       1, 2, 3, \ldots, n^2-1, n^2.
    \end{equation}
 \end{definicija}
@@ -192,20 +193,21 @@ in zato kvadrat ni normalen.
 
 \begin{proof}
    V normalnem magičnem kvadratu reda \(n\) je vsota vseh nastopajočih
-   števil (glej ?? na strani ??) enaka
-   !!. Ker imamo
+   števil (glej \eqref{eq:numbers} na strani \pageref{eq:numbers}) enaka \(1 + 2+ 3+ \ldots + n^2 = \sum_{k = 1}^{n^2} k = \frac{1}{2}n^2(n^2 + 1)\). Ker imamo
    v kvadratu \(n\) vrstic z enako vsoto, je vsota števil v eni vrstici
-   enaka številu \(M_2(n)\). % sklica: eq:numbers, eq:numbers
+   enaka številu \(\mathcal{M}_2(n)\). % sklica: eq:numbers, eq:numbers
 \end{proof}
 
-Preprost račun pokaže, da je konstanti ?? analogna konstanta
+Preprost račun pokaže, da je konstanti \eqref{eq:mc} analogna konstanta
 \(M_2(n;A,D)\) za magični kvadrat, v katerem so nameščena števila
-\(A\), \(A+D\), \(A+2D\), \ldots, \(A+(n^2-1)D\), enaka % sklic: eq:mc
-!!
+\(A\), \(A+D\), \(A+2D\), \ldots, \(A+(n^2-1)D\), enaka 
+\[
+   \mathcal{M}_2(n;A,D) = \frac{1}{2} n (2A + D (n^2 - 1)).
+\]% sklic: eq:mc
 
 \begin{definicija}
       Če vsako od števil v normalnem magičnem kvadratu reda \(n\) odštejemo
-      od števila !!, dobimo nov magični kvadrat, ki je prvotnemu
+      od števila \(n^2 + 1\), dobimo nov magični kvadrat, ki je prvotnemu
       \emph{komplementaren}.
 \end{definicija}
 
