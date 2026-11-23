@@ -16,6 +16,7 @@
 *.out
 *.pdf
 !slika.pdf
+!LaTeX_Simboli.pdf
 *.snm
 *.synctex.gz
 *.synctex(busy)
