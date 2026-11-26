@@ -17,6 +17,9 @@
 *.pdf
 !slika.pdf
 !LaTeX_Simboli.pdf
+!PerrinPlot2.pdf
+!navodila.pdf
+!kviz.pdf
 *.snm
 *.synctex.gz
 *.synctex(busy)
